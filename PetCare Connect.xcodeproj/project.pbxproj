@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70BCCEA42BD57FB100D71E1C /* Enums in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCEA02BD57FB000D71E1C /* Enums */; };
+		70BCCEA52BD57FB100D71E1C /* Helper in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCEA12BD57FB000D71E1C /* Helper */; };
+		70BCCEA62BD57FB100D71E1C /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCEA22BD57FB000D71E1C /* Extensions */; };
+		70BCCEA72BD57FB100D71E1C /* LocalJsons in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCEA32BD57FB000D71E1C /* LocalJsons */; };
 		70ED29992BD56EDC0066A026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED29982BD56EDC0066A026 /* AppDelegate.swift */; };
 		70ED299B2BD56EDC0066A026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */; };
 		70ED29A02BD56EDC0066A026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70ED299E2BD56EDC0066A026 /* Main.storyboard */; };
 		70ED29A22BD56EE00066A026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70ED29A12BD56EE00066A026 /* Assets.xcassets */; };
 		70ED29A52BD56EE00066A026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70ED29A32BD56EE00066A026 /* LaunchScreen.storyboard */; };
+		70ED29B02BD5750B0066A026 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED29AF2BD5750B0066A026 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70BCCEA02BD57FB000D71E1C /* Enums */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Enums; path = ../../../../Downloads/ChatApp/ChatApp/Enums; sourceTree = "<group>"; };
+		70BCCEA12BD57FB000D71E1C /* Helper */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Helper; path = ../../../../Downloads/ChatApp/ChatApp/Helper; sourceTree = "<group>"; };
+		70BCCEA22BD57FB000D71E1C /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Extensions; path = ../../../../Downloads/ChatApp/ChatApp/Extensions; sourceTree = "<group>"; };
+		70BCCEA32BD57FB000D71E1C /* LocalJsons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LocalJsons; path = ../../../../Downloads/ChatApp/ChatApp/LocalJsons; sourceTree = "<group>"; };
 		70ED29952BD56EDC0066A026 /* PetCare Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PetCare Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70ED29982BD56EDC0066A026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +31,7 @@
 		70ED29A12BD56EE00066A026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70ED29A42BD56EE00066A026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70ED29A62BD56EE00066A026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70ED29AF2BD5750B0066A026 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +64,13 @@
 		70ED29972BD56EDC0066A026 /* PetCare Connect */ = {
 			isa = PBXGroup;
 			children = (
+				70BCCEA02BD57FB000D71E1C /* Enums */,
+				70BCCEA22BD57FB000D71E1C /* Extensions */,
+				70BCCEA12BD57FB000D71E1C /* Helper */,
+				70BCCEA32BD57FB000D71E1C /* LocalJsons */,
 				70ED29AC2BD56F070066A026 /* Resources */,
 				70ED29AD2BD56F850066A026 /* View */,
+				70ED29B12BD5751A0066A026 /* Home */,
 				70ED29A62BD56EE00066A026 /* Info.plist */,
 			);
 			path = "PetCare Connect";
@@ -86,6 +101,22 @@
 				70ED29A32BD56EE00066A026 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		70ED29B12BD5751A0066A026 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				70ED29B22BD575240066A026 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		70ED29B22BD575240066A026 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				70ED29AF2BD5750B0066A026 /* HomeVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +177,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70BCCEA72BD57FB100D71E1C /* LocalJsons in Resources */,
+				70BCCEA62BD57FB100D71E1C /* Extensions in Resources */,
+				70BCCEA52BD57FB100D71E1C /* Helper in Resources */,
 				70ED29A52BD56EE00066A026 /* LaunchScreen.storyboard in Resources */,
+				70BCCEA42BD57FB100D71E1C /* Enums in Resources */,
 				70ED29A22BD56EE00066A026 /* Assets.xcassets in Resources */,
 				70ED29A02BD56EDC0066A026 /* Main.storyboard in Resources */,
 			);
@@ -159,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70ED29B02BD5750B0066A026 /* HomeVC.swift in Sources */,
 				70ED29992BD56EDC0066A026 /* AppDelegate.swift in Sources */,
 				70ED299B2BD56EDC0066A026 /* SceneDelegate.swift in Sources */,
 			);
