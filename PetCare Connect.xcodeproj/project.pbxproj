@@ -11,6 +11,8 @@
 		70BCCEA52BD57FB100D71E1C /* Helper in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCEA12BD57FB000D71E1C /* Helper */; };
 		70BCCEA62BD57FB100D71E1C /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCEA22BD57FB000D71E1C /* Extensions */; };
 		70BCCEA72BD57FB100D71E1C /* LocalJsons in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCEA32BD57FB000D71E1C /* LocalJsons */; };
+		70BCCEAF2BD5836800D71E1C /* PetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCCEAE2BD5836800D71E1C /* PetsModel.swift */; };
+		70BCCEB42BD583C500D71E1C /* ConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCCEB32BD583C500D71E1C /* ConfigModel.swift */; };
 		70ED29992BD56EDC0066A026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED29982BD56EDC0066A026 /* AppDelegate.swift */; };
 		70ED299B2BD56EDC0066A026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */; };
 		70ED29A02BD56EDC0066A026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70ED299E2BD56EDC0066A026 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		70BCCEA12BD57FB000D71E1C /* Helper */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Helper; path = ../../../../Downloads/ChatApp/ChatApp/Helper; sourceTree = "<group>"; };
 		70BCCEA22BD57FB000D71E1C /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Extensions; path = ../../../../Downloads/ChatApp/ChatApp/Extensions; sourceTree = "<group>"; };
 		70BCCEA32BD57FB000D71E1C /* LocalJsons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LocalJsons; path = ../../../../Downloads/ChatApp/ChatApp/LocalJsons; sourceTree = "<group>"; };
+		70BCCEAE2BD5836800D71E1C /* PetsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsModel.swift; sourceTree = "<group>"; };
+		70BCCEB32BD583C500D71E1C /* ConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigModel.swift; sourceTree = "<group>"; };
 		70ED29952BD56EDC0066A026 /* PetCare Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PetCare Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70ED29982BD56EDC0066A026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70BCCEB22BD5839D00D71E1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70BCCEAE2BD5836800D71E1C /* PetsModel.swift */,
+				70BCCEB32BD583C500D71E1C /* ConfigModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		70ED298C2BD56EDC0066A026 = {
 			isa = PBXGroup;
 			children = (
@@ -64,13 +77,14 @@
 		70ED29972BD56EDC0066A026 /* PetCare Connect */ = {
 			isa = PBXGroup;
 			children = (
+				70ED29AC2BD56F070066A026 /* Resources */,
 				70BCCEA02BD57FB000D71E1C /* Enums */,
 				70BCCEA22BD57FB000D71E1C /* Extensions */,
 				70BCCEA12BD57FB000D71E1C /* Helper */,
 				70BCCEA32BD57FB000D71E1C /* LocalJsons */,
-				70ED29AC2BD56F070066A026 /* Resources */,
-				70ED29AD2BD56F850066A026 /* View */,
+				70ED29AE2BD56F910066A026 /* Storyboard */,
 				70ED29B12BD5751A0066A026 /* Home */,
+				70BCCEB22BD5839D00D71E1C /* Model */,
 				70ED29A62BD56EE00066A026 /* Info.plist */,
 			);
 			path = "PetCare Connect";
@@ -84,14 +98,6 @@
 				70ED29A12BD56EE00066A026 /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		70ED29AD2BD56F850066A026 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				70ED29AE2BD56F910066A026 /* Storyboard */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		70ED29AE2BD56F910066A026 /* Storyboard */ = {
@@ -197,6 +203,8 @@
 				70ED29B02BD5750B0066A026 /* HomeVC.swift in Sources */,
 				70ED29992BD56EDC0066A026 /* AppDelegate.swift in Sources */,
 				70ED299B2BD56EDC0066A026 /* SceneDelegate.swift in Sources */,
+				70BCCEAF2BD5836800D71E1C /* PetsModel.swift in Sources */,
+				70BCCEB42BD583C500D71E1C /* ConfigModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
