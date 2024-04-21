@@ -26,6 +26,7 @@ class HeaderCell: UITableViewCell {
     }
     
     private func setupBorderedView() {
+    
         self.borderedView.layer.borderWidth = 2
         self.borderedView.layer.borderColor = UIColor.lightGray.cgColor
     }

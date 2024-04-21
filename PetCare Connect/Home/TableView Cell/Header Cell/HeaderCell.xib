@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,26 +17,39 @@
                 <rect key="frame" x="0.0" y="0.0" width="475" height="187"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ea-kL-kCl">
+                        <rect key="frame" x="16" y="0.0" width="443" height="187"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fru-Iu-rCB">
                         <rect key="frame" x="0.0" y="0.0" width="475" height="187"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="fru-Iu-rCB" secondAttribute="bottom" id="Hc1-L1-VcZ"/>
-                    <constraint firstItem="fru-Iu-rCB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TWf-S5-Wqk"/>
-                    <constraint firstItem="fru-Iu-rCB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TsX-4V-oa0"/>
-                    <constraint firstAttribute="trailing" secondItem="fru-Iu-rCB" secondAttribute="trailing" id="axY-aA-kMI"/>
+                    <constraint firstAttribute="bottom" secondItem="7ea-kL-kCl" secondAttribute="bottom" id="5V6-zS-TZi"/>
+                    <constraint firstItem="7ea-kL-kCl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="AG8-Tw-LxJ"/>
+                    <constraint firstItem="fru-Iu-rCB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IIh-A4-l4k"/>
+                    <constraint firstItem="7ea-kL-kCl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Lur-p1-uAd"/>
+                    <constraint firstAttribute="bottom" secondItem="fru-Iu-rCB" secondAttribute="bottom" id="Og9-P1-6dO"/>
+                    <constraint firstAttribute="trailing" secondItem="7ea-kL-kCl" secondAttribute="trailing" constant="16" id="g7L-72-6R1"/>
+                    <constraint firstAttribute="trailing" secondItem="fru-Iu-rCB" secondAttribute="trailing" id="hHx-dj-mdQ"/>
+                    <constraint firstItem="fru-Iu-rCB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lAg-kI-ae9"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="borderedView" destination="fru-Iu-rCB" id="fKK-61-Mla"/>
+                <outlet property="borderedView" destination="7ea-kL-kCl" id="oYV-y8-37O"/>
                 <outlet property="title" destination="fru-Iu-rCB" id="8f2-MJ-856"/>
             </connections>
-            <point key="canvasLocation" x="238.93129770992365" y="39.08450704225352"/>
+            <point key="canvasLocation" x="238.93129770992365" y="38.380281690140848"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
