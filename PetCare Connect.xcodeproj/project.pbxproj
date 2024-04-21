@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		70BCCEA42BD57FB100D71E1C /* Enums in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCEA02BD57FB000D71E1C /* Enums */; };
-		70BCCEA52BD57FB100D71E1C /* Helper in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCEA12BD57FB000D71E1C /* Helper */; };
-		70BCCEA62BD57FB100D71E1C /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCEA22BD57FB000D71E1C /* Extensions */; };
-		70BCCEA72BD57FB100D71E1C /* LocalJsons in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCEA32BD57FB000D71E1C /* LocalJsons */; };
+		704B29762BD5A06800EF5197 /* pets.json in Resources */ = {isa = PBXBuildFile; fileRef = 704B29752BD5A06800EF5197 /* pets.json */; };
+		704B29782BD5A08900EF5197 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 704B29772BD5A08900EF5197 /* config.json */; };
+		7056CED12BD5944700AB1F14 /* PetsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056CECF2BD5944700AB1F14 /* PetsTVCell.swift */; };
+		7056CED22BD5944700AB1F14 /* PetsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7056CED02BD5944700AB1F14 /* PetsTVCell.xib */; };
 		70BCCEAF2BD5836800D71E1C /* PetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCCEAE2BD5836800D71E1C /* PetsModel.swift */; };
 		70BCCEB42BD583C500D71E1C /* ConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCCEB32BD583C500D71E1C /* ConfigModel.swift */; };
+		70BCCEBC2BD58BCA00D71E1C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCCEBB2BD58BCA00D71E1C /* Enums.swift */; };
+		70BCCEC02BD58C0F00D71E1C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCCEBF2BD58C0F00D71E1C /* Extensions.swift */; };
+		70BCCEC32BD58C6900D71E1C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCCEC22BD58C6900D71E1C /* Helper.swift */; };
+		70BCCEC62BD58CB200D71E1C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCCEC52BD58CB200D71E1C /* HomeViewModel.swift */; };
+		70BCCECD2BD5914F00D71E1C /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCCECB2BD5914E00D71E1C /* HeaderCell.swift */; };
+		70BCCECE2BD5914F00D71E1C /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCECC2BD5914F00D71E1C /* HeaderCell.xib */; };
 		70ED29992BD56EDC0066A026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED29982BD56EDC0066A026 /* AppDelegate.swift */; };
 		70ED299B2BD56EDC0066A026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */; };
 		70ED29A02BD56EDC0066A026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70ED299E2BD56EDC0066A026 /* Main.storyboard */; };
@@ -22,12 +28,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		70BCCEA02BD57FB000D71E1C /* Enums */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Enums; path = ../../../../Downloads/ChatApp/ChatApp/Enums; sourceTree = "<group>"; };
-		70BCCEA12BD57FB000D71E1C /* Helper */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Helper; path = ../../../../Downloads/ChatApp/ChatApp/Helper; sourceTree = "<group>"; };
-		70BCCEA22BD57FB000D71E1C /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Extensions; path = ../../../../Downloads/ChatApp/ChatApp/Extensions; sourceTree = "<group>"; };
-		70BCCEA32BD57FB000D71E1C /* LocalJsons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LocalJsons; path = ../../../../Downloads/ChatApp/ChatApp/LocalJsons; sourceTree = "<group>"; };
+		704B29752BD5A06800EF5197 /* pets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pets.json; sourceTree = "<group>"; };
+		704B29772BD5A08900EF5197 /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		7056CECF2BD5944700AB1F14 /* PetsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsTVCell.swift; sourceTree = "<group>"; };
+		7056CED02BD5944700AB1F14 /* PetsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PetsTVCell.xib; sourceTree = "<group>"; };
 		70BCCEAE2BD5836800D71E1C /* PetsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsModel.swift; sourceTree = "<group>"; };
 		70BCCEB32BD583C500D71E1C /* ConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigModel.swift; sourceTree = "<group>"; };
+		70BCCEBB2BD58BCA00D71E1C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		70BCCEBF2BD58C0F00D71E1C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		70BCCEC22BD58C6900D71E1C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		70BCCEC52BD58CB200D71E1C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		70BCCECB2BD5914E00D71E1C /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		70BCCECC2BD5914F00D71E1C /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		70ED29952BD56EDC0066A026 /* PetCare Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PetCare Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70ED29982BD56EDC0066A026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		704B29792BD5A09100EF5197 /* LocalJson */ = {
+			isa = PBXGroup;
+			children = (
+				704B29752BD5A06800EF5197 /* pets.json */,
+				704B29772BD5A08900EF5197 /* config.json */,
+			);
+			path = LocalJson;
+			sourceTree = "<group>";
+		};
 		70BCCEB22BD5839D00D71E1C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +77,56 @@
 				70BCCEB32BD583C500D71E1C /* ConfigModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		70BCCEB82BD584DB00D71E1C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				70BCCEC52BD58CB200D71E1C /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		70BCCEBD2BD58BD800D71E1C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				70BCCEBB2BD58BCA00D71E1C /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		70BCCEC12BD58C2A00D71E1C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				70BCCEBF2BD58C0F00D71E1C /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		70BCCEC42BD58C7700D71E1C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				70BCCEC22BD58C6900D71E1C /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		70BCCECF2BD5915400D71E1C /* Header Cell */ = {
+			isa = PBXGroup;
+			children = (
+				70BCCECB2BD5914E00D71E1C /* HeaderCell.swift */,
+				70BCCECC2BD5914F00D71E1C /* HeaderCell.xib */,
+			);
+			path = "Header Cell";
+			sourceTree = "<group>";
+		};
+		70BCCED02BD5916000D71E1C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7056CECF2BD5944700AB1F14 /* PetsTVCell.swift */,
+				7056CED02BD5944700AB1F14 /* PetsTVCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		70ED298C2BD56EDC0066A026 = {
@@ -78,13 +149,12 @@
 			isa = PBXGroup;
 			children = (
 				70ED29AC2BD56F070066A026 /* Resources */,
-				70BCCEA02BD57FB000D71E1C /* Enums */,
-				70BCCEA22BD57FB000D71E1C /* Extensions */,
-				70BCCEA12BD57FB000D71E1C /* Helper */,
-				70BCCEA32BD57FB000D71E1C /* LocalJsons */,
-				70ED29AE2BD56F910066A026 /* Storyboard */,
+				704B29792BD5A09100EF5197 /* LocalJson */,
+				70BCCEC12BD58C2A00D71E1C /* Extensions */,
+				70BCCEBD2BD58BD800D71E1C /* Enums */,
+				70BCCEC42BD58C7700D71E1C /* Helper */,
 				70ED29B12BD5751A0066A026 /* Home */,
-				70BCCEB22BD5839D00D71E1C /* Model */,
+				70ED29AE2BD56F910066A026 /* Storyboard */,
 				70ED29A62BD56EE00066A026 /* Info.plist */,
 			);
 			path = "PetCare Connect";
@@ -112,6 +182,8 @@
 		70ED29B12BD5751A0066A026 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				70BCCEB82BD584DB00D71E1C /* ViewModel */,
+				70BCCEB22BD5839D00D71E1C /* Model */,
 				70ED29B22BD575240066A026 /* Controller */,
 			);
 			path = Home;
@@ -121,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				70ED29AF2BD5750B0066A026 /* HomeVC.swift */,
+				70BCCECF2BD5915400D71E1C /* Header Cell */,
+				70BCCED02BD5916000D71E1C /* Cell */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,13 +257,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70BCCEA72BD57FB100D71E1C /* LocalJsons in Resources */,
-				70BCCEA62BD57FB100D71E1C /* Extensions in Resources */,
-				70BCCEA52BD57FB100D71E1C /* Helper in Resources */,
+				704B29782BD5A08900EF5197 /* config.json in Resources */,
+				70BCCECE2BD5914F00D71E1C /* HeaderCell.xib in Resources */,
 				70ED29A52BD56EE00066A026 /* LaunchScreen.storyboard in Resources */,
-				70BCCEA42BD57FB100D71E1C /* Enums in Resources */,
+				7056CED22BD5944700AB1F14 /* PetsTVCell.xib in Resources */,
 				70ED29A22BD56EE00066A026 /* Assets.xcassets in Resources */,
 				70ED29A02BD56EDC0066A026 /* Main.storyboard in Resources */,
+				704B29762BD5A06800EF5197 /* pets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,9 +275,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				70ED29B02BD5750B0066A026 /* HomeVC.swift in Sources */,
+				7056CED12BD5944700AB1F14 /* PetsTVCell.swift in Sources */,
+				70BCCEC62BD58CB200D71E1C /* HomeViewModel.swift in Sources */,
 				70ED29992BD56EDC0066A026 /* AppDelegate.swift in Sources */,
+				70BCCEC02BD58C0F00D71E1C /* Extensions.swift in Sources */,
 				70ED299B2BD56EDC0066A026 /* SceneDelegate.swift in Sources */,
+				70BCCEC32BD58C6900D71E1C /* Helper.swift in Sources */,
+				70BCCEBC2BD58BCA00D71E1C /* Enums.swift in Sources */,
 				70BCCEAF2BD5836800D71E1C /* PetsModel.swift in Sources */,
+				70BCCECD2BD5914F00D71E1C /* HeaderCell.swift in Sources */,
 				70BCCEB42BD583C500D71E1C /* ConfigModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,9 @@ class HomeViewModel {
         if let data = Helper.getDummyData(json: .Pets, type: PetsModel.self) {
             self.petsData = data.pets ?? [Pets]()
             completion()
+        }else {
+            
+            print("File not found")
         }
     }
     

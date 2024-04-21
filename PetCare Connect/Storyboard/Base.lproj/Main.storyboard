@@ -30,7 +30,12 @@
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Chat">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="chatButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UzJ-ma-Rlc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZx-zq-V2O">
                                                 <rect key="frame" x="190.66666666666663" y="0.0" width="170.33333333333337" height="80"/>
@@ -40,13 +45,18 @@
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Call">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="callButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d69-og-2jT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="TkC-7d-d1K" secondAttribute="trailing" constant="16" id="50j-Ti-eqd"/>
                                     <constraint firstItem="TkC-7d-d1K" firstAttribute="leading" secondItem="7mi-Cr-YdJ" secondAttribute="leading" constant="16" id="Jt0-sl-hVV"/>
@@ -55,7 +65,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bhl-m5-bL3">
-                                <rect key="frame" x="0.0" y="139" width="393" height="679"/>
+                                <rect key="frame" x="0.0" y="149" width="393" height="669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -65,12 +75,17 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bhl-m5-bL3" secondAttribute="trailing" id="DS9-7v-Z2k"/>
                             <constraint firstItem="7mi-Cr-YdJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GV3-TV-FdE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7mi-Cr-YdJ" secondAttribute="trailing" id="aqe-a6-5hK"/>
-                            <constraint firstItem="Bhl-m5-bL3" firstAttribute="top" secondItem="7mi-Cr-YdJ" secondAttribute="bottom" id="eEy-JX-4II"/>
+                            <constraint firstItem="Bhl-m5-bL3" firstAttribute="top" secondItem="7mi-Cr-YdJ" secondAttribute="bottom" constant="10" id="egd-oN-0wE"/>
                             <constraint firstItem="Bhl-m5-bL3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fta-ig-zAY"/>
                             <constraint firstItem="7mi-Cr-YdJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wB1-kL-Aqj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bhl-m5-bL3" secondAttribute="bottom" id="xtL-8H-VP8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="callButton" destination="YLH-ke-Nyd" id="0zZ-wc-0nJ"/>
+                        <outlet property="chatButton" destination="yZx-zq-V2O" id="sHE-tK-F90"/>
+                        <outlet property="tableView" destination="Bhl-m5-bL3" id="v0i-Vx-9US"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
