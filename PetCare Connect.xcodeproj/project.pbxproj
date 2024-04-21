@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		70ED29992BD56EDC0066A026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED29982BD56EDC0066A026 /* AppDelegate.swift */; };
 		70ED299B2BD56EDC0066A026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */; };
-		70ED299D2BD56EDC0066A026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED299C2BD56EDC0066A026 /* ViewController.swift */; };
 		70ED29A02BD56EDC0066A026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70ED299E2BD56EDC0066A026 /* Main.storyboard */; };
 		70ED29A22BD56EE00066A026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70ED29A12BD56EE00066A026 /* Assets.xcassets */; };
 		70ED29A52BD56EE00066A026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70ED29A32BD56EE00066A026 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		70ED29952BD56EDC0066A026 /* PetCare Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PetCare Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70ED29982BD56EDC0066A026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		70ED299C2BD56EDC0066A026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		70ED299F2BD56EDC0066A026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70ED29A12BD56EE00066A026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70ED29A42BD56EE00066A026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,38 @@
 		70ED29972BD56EDC0066A026 /* PetCare Connect */ = {
 			isa = PBXGroup;
 			children = (
-				70ED29982BD56EDC0066A026 /* AppDelegate.swift */,
-				70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */,
-				70ED299C2BD56EDC0066A026 /* ViewController.swift */,
-				70ED299E2BD56EDC0066A026 /* Main.storyboard */,
-				70ED29A12BD56EE00066A026 /* Assets.xcassets */,
-				70ED29A32BD56EE00066A026 /* LaunchScreen.storyboard */,
+				70ED29AC2BD56F070066A026 /* Resources */,
+				70ED29AD2BD56F850066A026 /* View */,
 				70ED29A62BD56EE00066A026 /* Info.plist */,
 			);
 			path = "PetCare Connect";
+			sourceTree = "<group>";
+		};
+		70ED29AC2BD56F070066A026 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				70ED29982BD56EDC0066A026 /* AppDelegate.swift */,
+				70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */,
+				70ED29A12BD56EE00066A026 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		70ED29AD2BD56F850066A026 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70ED29AE2BD56F910066A026 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70ED29AE2BD56F910066A026 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				70ED299E2BD56EDC0066A026 /* Main.storyboard */,
+				70ED29A32BD56EE00066A026 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +159,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70ED299D2BD56EDC0066A026 /* ViewController.swift in Sources */,
 				70ED29992BD56EDC0066A026 /* AppDelegate.swift in Sources */,
 				70ED299B2BD56EDC0066A026 /* SceneDelegate.swift in Sources */,
 			);
