@@ -8,27 +8,26 @@
 import UIKit
 
 class HeaderCell: UITableViewCell {
-//    @IBOutlet weak var borderedView: UIView!
+    @IBOutlet weak var borderedView: UIView!
     @IBOutlet weak var title: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        self.setupUI()
+        self.setupUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
-//    private func setupUI() {
-//        self.setupBorderedView()
-//    }
+    private func setupUI() {
+        self.setupBorderedView()
+    }
     
-//    private func setupBorderedView() {
-//        self.borderedView.layer.borderWidth = 2
-//        self.borderedView.layer.borderColor = UIColor.lightGray.cgColor
-//    }
+    private func setupBorderedView() {
+        self.borderedView.layer.borderWidth = 2
+        self.borderedView.layer.borderColor = UIColor.lightGray.cgColor
+    }
     
 }

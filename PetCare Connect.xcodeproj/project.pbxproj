@@ -183,8 +183,9 @@
 			isa = PBXGroup;
 			children = (
 				70BCCEB82BD584DB00D71E1C /* ViewModel */,
-				70BCCEB22BD5839D00D71E1C /* Model */,
 				70ED29B22BD575240066A026 /* Controller */,
+				70BCCEB22BD5839D00D71E1C /* Model */,
+				70FC2E492BD5B19500D46D9A /* TableView Cell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -193,10 +194,17 @@
 			isa = PBXGroup;
 			children = (
 				70ED29AF2BD5750B0066A026 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		70FC2E492BD5B19500D46D9A /* TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
 				70BCCECF2BD5915400D71E1C /* Header Cell */,
 				70BCCED02BD5916000D71E1C /* Cell */,
 			);
-			path = Controller;
+			path = "TableView Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
