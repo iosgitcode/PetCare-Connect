@@ -16,18 +16,29 @@ class NetworkManager {
                 return
             }
             
-            guard let data = data else {
-                completion(.failure(NetworkError.noData))
+            guard let httpResponse = response as? HTTPURLResponse else {
+                completion(.failure(NetworkError.invalidResponse))
                 return
             }
             
-            do {
-                let decodedData = try JSONDecoder().decode(T.self, from: data)
-                completion(.success(decodedData))
-            } catch {
-                completion(.failure(error))
+            switch httpResponse.statusCode {
+            case 200...299: 
+                guard let data = data else {
+                    completion(.failure(NetworkError.noData))
+                    return
+                }
+                do {
+                    let decodedData = try JSONDecoder().decode(T.self, from: data)
+                    completion(.success(decodedData))
+                } catch {
+                    completion(.failure(error))
+                }
+            default:
+                completion(.failure(NetworkError.invalidStatusCode(httpResponse.statusCode)))
             }
         }.resume()
     }
 }
+
+
 

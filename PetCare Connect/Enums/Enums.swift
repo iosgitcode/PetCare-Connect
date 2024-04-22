@@ -14,6 +14,8 @@ enum LocalJson: String {
 
 enum NetworkError: Error {
     case noData
+    case invalidResponse
+    case invalidStatusCode(Int)
 }
 
 enum APIEndpoint {
