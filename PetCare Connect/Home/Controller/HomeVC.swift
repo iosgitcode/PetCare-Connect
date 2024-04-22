@@ -13,6 +13,8 @@ class HomeVC: UIViewController {
 
     private var viewModel: HomeViewModel = HomeViewModel()
     var imageUrl:String?
+    private var refreshControl = UIRefreshControl()
+
     
     
     override func viewDidLoad() {
@@ -46,6 +48,9 @@ class HomeVC: UIViewController {
         
         self.tableView.register(UINib(nibName: "PetsTVCell", bundle: nil), forCellReuseIdentifier: "PetsTVCell")
         self.tableView.register(UINib(nibName: "HeaderCell", bundle: nil), forCellReuseIdentifier: "HeaderCell")
+        
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
     }
     
     private func loadData() {
@@ -71,27 +76,21 @@ class HomeVC: UIViewController {
     
     @IBAction func callButtonAction(_ sender: UIButton) {
         if Helper.isWithinOfficeHours() {
-            self.showAlert(message: "Thank you for getting in touch with us. We' Il get back to you as soon as possible")
+            self.showAlert(message: AppConstants.officeHoursMessage)
         } else {
-            self.showAlert(message: "Work hours has ended. Please contact us again on the next work day")
+            self.showAlert(message: AppConstants.afterHoursMessage)
         }
-    }
-    
-    @IBAction func chatButtonAction(_ sender: UIButton) {
-        if Helper.isWithinOfficeHours() {
-            self.showAlert(message: "Thank you for getting in touch with us. We' Il get back to you as soon as possible")
-        } else {
-            self.showAlert(message: "Work hours has ended. Please contact us again on the next work day")
-        }
-    }
-    
-    func showAlert(message: String) {
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default)
-        alert.addAction(okAction)
-        self.present(alert, animated: true)
     }
 
+    @IBAction func chatButtonAction(_ sender: UIButton) {
+        if Helper.isWithinOfficeHours() {
+            self.showAlert(message: AppConstants.officeHoursMessage)
+        } else {
+            self.showAlert(message: AppConstants.afterHoursMessage)
+        }
+    }
+
+    
 
 }
 
@@ -133,7 +132,26 @@ extension HomeVC: UITableViewDataSource {
 
 extension HomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        debugPrint("Item selected at : ", indexPath.row)
+        
+        guard let contentUrl = viewModel.petsData[indexPath.row].contentUrl else {
+                    print("Content URL is nil")
+                    return
+                }
+        DispatchQueue.global().async {
+            DispatchQueue.main.async {
+                self.pushToViewController(withIdentifier: "PetsDetailVC", urlToLoad: contentUrl)
+            }
+        }
+
+
     }
+    
+    @objc private func refreshData() {
+        
+        self.loadData()
+        refreshControl.endRefreshing()
+    }
+
+
 }
 

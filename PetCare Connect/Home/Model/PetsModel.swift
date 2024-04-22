@@ -14,9 +14,12 @@ struct PetsModel: Codable {
 struct Pets: Codable {
     let imageUrl: String?
     let title: String?
+    let contentUrl:String?
     
     enum CodingKeys: String, CodingKey {
         case imageUrl = "image_url"
         case title
+        case contentUrl = "content_url"
+
     }
 }

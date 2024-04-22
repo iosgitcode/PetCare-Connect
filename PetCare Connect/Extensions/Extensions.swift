@@ -26,3 +26,24 @@ extension UIImageView {
         }
     }
 }
+    
+extension UIViewController {
+    func pushToViewController(withIdentifier identifier: String, urlToLoad: String) {
+        guard let nextVC = storyboard?.instantiateViewController(withIdentifier: identifier) as? PetsDetailVC else {
+            return
+        }
+        nextVC.urlToLoad = urlToLoad
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
+}
+
+
+extension UIViewController {
+
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        self.present(alert, animated: true)
+    }
+}

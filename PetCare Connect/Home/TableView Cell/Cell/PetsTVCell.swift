@@ -30,6 +30,5 @@ class PetsTVCell: UITableViewCell {
     
     func configure(with imageUrl: String) {
         petImage.load(urlString: imageUrl)
-           // configure other cell properties if needed
        }
 }
