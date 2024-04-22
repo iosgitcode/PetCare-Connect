@@ -1,9 +1,11 @@
 //
-//  PetsDetailVC.swift
+//  PetsDetailsVC.swift
 //  PetCare Connect
 //
 //  Created by Dasharath Naik on 22/04/24.
 //
+
+import UIKit
 
 import UIKit
 import WebKit
@@ -45,3 +47,4 @@ class PetsDetailVC: UIViewController, WKNavigationDelegate {
         activityIndicator.isHidden = true
     }
 }
+
