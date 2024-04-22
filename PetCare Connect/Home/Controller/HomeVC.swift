@@ -46,8 +46,8 @@ class HomeVC: UIViewController {
         self.tableView.dataSource = self
         self.tableView.separatorStyle = .none
         
-        self.tableView.register(UINib(nibName: "PetsTVCell", bundle: nil), forCellReuseIdentifier: "PetsTVCell")
-        self.tableView.register(UINib(nibName: "HeaderCell", bundle: nil), forCellReuseIdentifier: "HeaderCell")
+        self.tableView.register(UINib(nibName: CellIdentifier.petsCell, bundle: nil), forCellReuseIdentifier: CellIdentifier.petsCell)
+        self.tableView.register(UINib(nibName: CellIdentifier.headerCell, bundle: nil), forCellReuseIdentifier: CellIdentifier.headerCell)
         
         tableView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
@@ -101,7 +101,7 @@ extension HomeVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "PetsTVCell", for: indexPath) as? PetsTVCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.petsCell, for: indexPath) as? PetsTVCell {
             cell.name.text = self.viewModel.petsData[indexPath.row].title ?? ""
             if let imageUrl = self.viewModel.petsData[indexPath.row].imageUrl {
                 cell.configure(with: imageUrl )
@@ -118,7 +118,7 @@ extension HomeVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if let header = tableView.dequeueReusableCell(withIdentifier: "HeaderCell") as? HeaderCell {
+        if let header = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.headerCell) as? HeaderCell {
             header.title.text = "Office Hours : " +  (self.viewModel.configData.settings?.workHours ?? "")
             return header
         }
@@ -139,7 +139,7 @@ extension HomeVC: UITableViewDelegate {
                 }
         DispatchQueue.global().async {
             DispatchQueue.main.async {
-                self.pushToViewController(withIdentifier: "PetsDetailVC", urlToLoad: contentUrl)
+                self.pushToViewController(withIdentifier: SegueIdentifier.petsDetailVC, urlToLoad: contentUrl)
             }
         }
 

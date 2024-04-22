@@ -11,3 +11,12 @@ struct AppConstants {
     static let officeHoursMessage = "Thank you for getting in touch with us. We'll get back to you as soon as possible"
     static let afterHoursMessage = "Work hours have ended. Please contact us again on the next work day"
 }
+
+struct CellIdentifier {
+    static let petsCell = "PetsTVCell"
+    static let headerCell = "HeaderCell"
+}
+
+struct SegueIdentifier {
+    static let petsDetailVC = "PetsDetailVC"
+}

@@ -20,7 +20,7 @@
 		70BCCECD2BD5914F00D71E1C /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCCECB2BD5914E00D71E1C /* HeaderCell.swift */; };
 		70BCCECE2BD5914F00D71E1C /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BCCECC2BD5914F00D71E1C /* HeaderCell.xib */; };
 		70CAE51D2BD625A300D938D8 /* PetsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CAE51C2BD625A300D938D8 /* PetsDetailVC.swift */; };
-		70CAE51F2BD6419800D938D8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CAE51E2BD6419800D938D8 /* Data.swift */; };
+		70CAE51F2BD6419800D938D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CAE51E2BD6419800D938D8 /* Constants.swift */; };
 		70ED29992BD56EDC0066A026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED29982BD56EDC0066A026 /* AppDelegate.swift */; };
 		70ED299B2BD56EDC0066A026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */; };
 		70ED29A02BD56EDC0066A026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70ED299E2BD56EDC0066A026 /* Main.storyboard */; };
@@ -43,7 +43,7 @@
 		70BCCECB2BD5914E00D71E1C /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		70BCCECC2BD5914F00D71E1C /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		70CAE51C2BD625A300D938D8 /* PetsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsDetailVC.swift; sourceTree = SOURCE_ROOT; };
-		70CAE51E2BD6419800D938D8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		70CAE51E2BD6419800D938D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		70ED29952BD56EDC0066A026 /* PetCare Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PetCare Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70ED29982BD56EDC0066A026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70ED299A2BD56EDC0066A026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,12 +133,12 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		70CAE5202BD641A400D938D8 /* Data */ = {
+		70CAE5202BD641A400D938D8 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				70CAE51E2BD6419800D938D8 /* Data.swift */,
+				70CAE51E2BD6419800D938D8 /* Constants.swift */,
 			);
-			path = Data;
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		70ED298C2BD56EDC0066A026 = {
@@ -165,7 +165,7 @@
 				70BCCEC12BD58C2A00D71E1C /* Extensions */,
 				70BCCEBD2BD58BD800D71E1C /* Enums */,
 				70BCCEC42BD58C7700D71E1C /* Helper */,
-				70CAE5202BD641A400D938D8 /* Data */,
+				70CAE5202BD641A400D938D8 /* Constants */,
 				70ED29B12BD5751A0066A026 /* Home */,
 				70ED29AE2BD56F910066A026 /* Storyboard */,
 				70ED29A62BD56EE00066A026 /* Info.plist */,
@@ -304,7 +304,7 @@
 				70BCCEC02BD58C0F00D71E1C /* Extensions.swift in Sources */,
 				70ED299B2BD56EDC0066A026 /* SceneDelegate.swift in Sources */,
 				70BCCEC32BD58C6900D71E1C /* Helper.swift in Sources */,
-				70CAE51F2BD6419800D938D8 /* Data.swift in Sources */,
+				70CAE51F2BD6419800D938D8 /* Constants.swift in Sources */,
 				70BCCEBC2BD58BCA00D71E1C /* Enums.swift in Sources */,
 				70BCCEAF2BD5836800D71E1C /* PetsModel.swift in Sources */,
 				70BCCECD2BD5914F00D71E1C /* HeaderCell.swift in Sources */,
