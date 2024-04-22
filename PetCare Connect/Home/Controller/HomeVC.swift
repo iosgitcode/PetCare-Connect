@@ -137,17 +137,15 @@ extension HomeVC: UITableViewDelegate {
                     print("Content URL is nil")
                     return
                 }
-        DispatchQueue.global().async {
-            DispatchQueue.main.async {
+    
+       
                 self.pushToViewController(withIdentifier: SegueIdentifier.petsDetailVC, urlToLoad: contentUrl)
-            }
-        }
 
 
     }
     
     @objc private func refreshData() {
-        
+    
         self.loadData()
         refreshControl.endRefreshing()
     }
