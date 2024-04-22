@@ -47,3 +47,20 @@ extension UIViewController {
         self.present(alert, animated: true)
     }
 }
+
+
+extension UIViewController {
+    
+    func isWithinOfficeHours() -> Bool {
+        let calendar = Calendar.current
+        let now = Date()
+        
+        let currentHour = calendar.component(.hour, from: now)
+        
+        let officeStartHour = 9
+        let officeEndHour = 18
+        
+        return currentHour >= officeStartHour && currentHour < officeEndHour
+    }
+
+}

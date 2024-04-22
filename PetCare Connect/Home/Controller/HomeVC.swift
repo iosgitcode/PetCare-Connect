@@ -75,7 +75,7 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func callButtonAction(_ sender: UIButton) {
-        if Helper.isWithinOfficeHours() {
+        if self.isWithinOfficeHours() {
             self.showAlert(message: AppConstants.officeHoursMessage)
         } else {
             self.showAlert(message: AppConstants.afterHoursMessage)
@@ -83,7 +83,7 @@ class HomeVC: UIViewController {
     }
 
     @IBAction func chatButtonAction(_ sender: UIButton) {
-        if Helper.isWithinOfficeHours() {
+        if self.isWithinOfficeHours() {
             self.showAlert(message: AppConstants.officeHoursMessage)
         } else {
             self.showAlert(message: AppConstants.afterHoursMessage)

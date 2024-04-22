@@ -11,20 +11,32 @@ class HomeViewModel {
     var petsData: [Pets] = []
     var configData: ConfigModel = ConfigModel()
     
-    func getPetsData(completion: @escaping (()->Void)) {
-        if let data = Helper.getDummyData(json: .Pets, type: PetsModel.self) {
-            self.petsData = data.pets ?? [Pets]()
-            completion()
-        }else {
-            
-            print("File not found")
+    func getPetsData(completion: @escaping () -> Void) {
+      
+        let petsURL = APIEndpoint.pets
+        NetworkManager.fetchData(url: petsURL ?? URL(fileURLWithPath: ""), type: PetsModel.self) { result in
+            switch result {
+            case .success(let data):
+                self.petsData = data.pets ?? [Pets]()
+                completion()
+            case .failure(let error):
+                print("Error fetching pets data: \(error)")
+            }
         }
     }
+
     
     func getConfigData(completion: @escaping (()->Void)) {
-        if let data = Helper.getDummyData(json: .Config, type: ConfigModel.self) {
-            self.configData = data
-            completion()
+        
+        let configUrl = APIEndpoint.config
+        NetworkManager.fetchData(url: configUrl ?? URL(fileURLWithPath: ""), type: ConfigModel.self) { result in
+            switch result {
+            case .success(let data):
+                self.configData = data
+                completion()
+            case .failure(let error):
+                print("Error fetching pets data: \(error)")
+            }
         }
     }
 }
