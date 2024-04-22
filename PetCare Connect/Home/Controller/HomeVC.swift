@@ -12,6 +12,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var callButton: UIButton!
 
     private var viewModel: HomeViewModel = HomeViewModel()
+    var imageUrl:String?
     
     
     override func viewDidLoad() {
@@ -100,8 +101,12 @@ extension HomeVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PetsTVCell", for: indexPath) as? PetsTVCell {
             cell.name.text = self.viewModel.petsData[indexPath.row].title ?? ""
+            if let imageUrl = self.viewModel.petsData[indexPath.row].imageUrl {
+                cell.configure(with: imageUrl )
+            }
             cell.backgroundColor = .red
             return cell
         }
@@ -116,8 +121,6 @@ extension HomeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let header = tableView.dequeueReusableCell(withIdentifier: "HeaderCell") as? HeaderCell {
             header.title.text = "Office Hours : " +  (self.viewModel.configData.settings?.workHours ?? "")
-            
-            
             return header
         }
         return UIView()

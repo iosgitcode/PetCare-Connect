@@ -28,4 +28,8 @@ class PetsTVCell: UITableViewCell {
         self.name.text = model.title
     }
     
+    func configure(with imageUrl: String) {
+        petImage.load(urlString: imageUrl)
+           // configure other cell properties if needed
+       }
 }
